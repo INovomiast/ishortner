@@ -55,3 +55,5 @@ if(shid === 'TM7eWuTD'){
 }else{
     window.location.href = 'https://inovomiast.github.io/ishortner/errors/404/';
 }
+
+//Ok, again, github does not want to... update the code... mothertruckers
