@@ -27,7 +27,6 @@ html{
     position: absolute;
     animation-duration: 1.5s;
     font-size: 20px;
-    
 }
 
 .header_title{
@@ -82,3 +81,18 @@ html{
     margin-top: 20px;
 }
 
+/*Errors*/
+.errorframe{
+    background-color: rgb(243, 243, 243);
+    color: black;
+    width: 50%;
+    text-align: center;
+    height: 150px;
+    border-radius: 12px;
+    margin-top: 250px;
+}
+
+.errorheader{
+    background-color: rgb(0, 81, 255);
+    color: white;
+}
