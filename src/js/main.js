@@ -52,4 +52,6 @@ if(shid === 'TM7eWuTD'){
         }, 1000);
         
     } 
+}else{
+    window.location.href = '../../errors/404/';
 }
