@@ -53,5 +53,5 @@ if(shid === 'TM7eWuTD'){
         
     } 
 }else{
-    window.location.href = '../errors/404/';
+    window.location.href = 'https://inovomiast.github.io/ishortner/errors/404/';
 }
