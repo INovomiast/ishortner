@@ -7,7 +7,7 @@ const view_ad_btn = document.getElementById('');
 const donate_btn = document.getElementById('');
 const body = document.body;
 
-const urls = ['https://inovomiast.github.io/school-works/', 'https://inovomiast.github.io/school-works/works/subjects/oriprof/1fx212dq1xz4gb2/?theme=light', 'https://inovomiast.github.io/school-works/works/subjects/oriprof/1fx274w1xz4u00/?theme=light', 'https://inovomiast.github.io/school-works/works/subjects/lengua/1fx21q01xz49vk/'];
+const urls = ['https://inovomiast.github.io/school-works/', 'https://inovomiast.github.io/school-works/works/subjects/oriprof/1fx212dq1xz4gb2/?theme=light', 'https://inovomiast.github.io/school-works/works/subjects/oriprof/1fx274w1xz4u00/?theme=light', 'https://inovomiast.github.io/school-works/works/subjects/lengua/1fx21q01xz49vk/', 'https://inovomiast.github.io/school-works/works/subjects/oriprof/1fx27il1xz4bpv/'];
 
 //URL Parameters
 const queryString = window.location.search;
@@ -88,6 +88,24 @@ if(shid === 'TM7eWuTD'){
         
     }, 1000);
     }
+}else if(shid === 'kCPR9Kwy'){
+    document.title = 'La Importancia del Espiritu Emprendedor - IShortner';
+body.onload = () => {
+    gotourl.href = '';
+    gotobtn.disabled = true;
+    var unlockTimer = setInterval(function(){                
+    gotobtn.innerHTML = timeleft + "secs To Unlock the Link!";
+    timeleft -= 1;
+            
+    if(timeleft === 0){
+        gotobtn.innerHTML = 'Access to Link';
+        clearInterval(unlockTimer);
+        gotobtn.disabled = false;
+        gotourl.href = urls[4];
+    }
+    
+}, 1000);
+}
 }else{
     window.location.href = 'https://inovomiast.github.io/ishortner/errors/404/';
 }
