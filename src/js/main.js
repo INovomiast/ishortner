@@ -107,7 +107,7 @@ body.onload = () => {
 }, 1000);
 }
 }else if(shid === '1M44PVul'){
-    document.title = 'La Importancia del Espiritu Emprendedor - IShortner';
+    document.title = 'La Zona de Comfort - IShortner';
 body.onload = () => {
     gotourl.href = '';
     gotobtn.disabled = true;
