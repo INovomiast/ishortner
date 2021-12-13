@@ -126,21 +126,21 @@ body.onload = () => {
 }
 }else if(shid === 'NkTt7HZ3Ro'){
     document.title = 'Filosofia Unidad 2 - IShortner';
-body.onload = () => {
-    gotourl.href = '';
-    gotobtn.disabled = true;
-    var unlockTimer = setInterval(function(){                
-    gotobtn.innerHTML = timeleft + "secs To Unlock the Link!";
-    timeleft -= 1;
-            
-    if(timeleft === 0){
-        gotobtn.innerHTML = 'Access to Link';
-        clearInterval(unlockTimer);
-        gotobtn.disabled = false;
-        gotourl.href = urls[6];
-    }
+    body.onload = () => {
+        gotourl.href = '';
+        gotobtn.disabled = true;
+        var unlockTimer = setInterval(function(){                
+        gotobtn.innerHTML = timeleft + "secs To Unlock the Link!";
+        timeleft -= 1;
+                
+        if(timeleft === 0){
+            gotobtn.innerHTML = 'Access to Link';
+            clearInterval(unlockTimer);
+            gotobtn.disabled = false;
+            gotourl.href = urls[6];
+        }
     
-}, 1000);
+    }, 1000);
 }
 }else{
     window.location.href = 'https://inovomiast.github.io/ishortner/errors/404/';
