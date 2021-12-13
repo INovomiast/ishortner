@@ -124,7 +124,7 @@ body.onload = () => {
     
 }, 1000);
 }
-else if(shid === 'NkTt7HZ3Ro'){
+}else if(shid === 'NkTt7HZ3Ro'){
     document.title = 'Filosofia Unidad 2 - IShortner';
 body.onload = () => {
     gotourl.href = '';
@@ -142,7 +142,6 @@ body.onload = () => {
     
 }, 1000);
 }
-
 }else{
     window.location.href = 'https://inovomiast.github.io/ishortner/errors/404/';
 }
