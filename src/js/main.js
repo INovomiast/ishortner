@@ -142,6 +142,24 @@ body.onload = () => {
     
     }, 1000);
 }
+}else if(shid === 'hzh4Bxxi'){
+    document.title = 'La Creatividad - IShortner';
+    body.onload = () => {
+        gotourl.href = '';
+        gotobtn.disabled = true;
+        var unlockTimer = setInterval(function(){                
+        gotobtn.innerHTML = timeleft + "secs To Unlock the Link!";
+        timeleft -= 1;
+                
+        if(timeleft === 0){
+            gotobtn.innerHTML = 'Access to Link';
+            clearInterval(unlockTimer);
+            gotobtn.disabled = false;
+            gotourl.href = urls[7];
+        }
+    
+    }, 1000);
+}
 }else{
     window.location.href = 'https://inovomiast.github.io/ishortner/errors/404/';
 }
