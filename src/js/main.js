@@ -7,7 +7,7 @@ const view_ad_btn = document.getElementById('');
 const donate_btn = document.getElementById('');
 const body = document.body;
 
-const urls = ['https://inovomiast.github.io/school-works/', 'https://inovomiast.github.io/school-works/works/subjects/oriprof/1fx212dq1xz4gb2/?theme=light', 'https://inovomiast.github.io/school-works/works/subjects/oriprof/1fx274w1xz4u00/?theme=light', 'https://inovomiast.github.io/school-works/works/subjects/lengua/1fx21q01xz49vk/', 'https://inovomiast.github.io/school-works/works/subjects/oriprof/1fx27il1xz4bpv/', 'https://inovomiast.github.io/school-works/works/subjects/oriprof/1fx2d281xz4g8x/', 'https://inovomiast.github.io/school-works/works/subjects/filosofia/1fx2jwx1xz4r0a/'];
+const urls = ['https://inovomiast.github.io/school-works/', 'https://inovomiast.github.io/school-works/works/subjects/oriprof/1fx212dq1xz4gb2/?theme=light', 'https://inovomiast.github.io/school-works/works/subjects/oriprof/1fx274w1xz4u00/?theme=light', 'https://inovomiast.github.io/school-works/works/subjects/lengua/1fx21q01xz49vk/', 'https://inovomiast.github.io/school-works/works/subjects/oriprof/1fx27il1xz4bpv/', 'https://inovomiast.github.io/school-works/works/subjects/oriprof/1fx2d281xz4g8x/', 'https://inovomiast.github.io/school-works/works/subjects/filosofia/1fx2jwx1xz4r0a/', 'https://inovomiast.000webhostapp.com/user/inovomiast/cdn/school/audio/Audio_Telefono_Orientacion.mp3'];
 
 //URL Parameters
 const queryString = window.location.search;
@@ -160,7 +160,10 @@ body.onload = () => {
     
     }, 1000);
 }
-}else{
+}
+
+
+else{
     window.location.href = 'https://inovomiast.github.io/ishortner/errors/404/';
 }
 
