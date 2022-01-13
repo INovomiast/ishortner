@@ -7,7 +7,7 @@ const view_ad_btn = document.getElementById('');
 const donate_btn = document.getElementById('');
 const body = document.body;
 
-const urls = ['https://inovomiast.github.io/school-works/', 'https://inovomiast.github.io/school-works/works/subjects/oriprof/1fx212dq1xz4gb2/?theme=light', 'https://inovomiast.github.io/school-works/works/subjects/oriprof/1fx274w1xz4u00/?theme=light', 'https://inovomiast.github.io/school-works/works/subjects/lengua/1fx21q01xz49vk/', 'https://inovomiast.github.io/school-works/works/subjects/oriprof/1fx27il1xz4bpv/', 'https://inovomiast.github.io/school-works/works/subjects/oriprof/1fx2d281xz4g8x/', 'https://inovomiast.github.io/school-works/works/subjects/filosofia/1fx2jwx1xz4r0a/', 'https://inovomiast.000webhostapp.com/user/inovomiast/cdn/school/audio/Audio_Telefono_Orientacion.mp3', 'https://inovomiast.github.io/school-works/works/subjects/lengua/1fx210kj1xz4t6g', 'https://inovomiast.github.io/school-works/works/subjects/lengua/1fx2eo81xz4oq9', 'https://inovomiast.github.io/school-works/works/subjects/tecnologia/1fx2fht1xz4emd'];
+const urls = ['https://inovomiast.github.io/school-works/', 'https://inovomiast.github.io/school-works/works/subjects/oriprof/1fx212dq1xz4gb2/?theme=light', 'https://inovomiast.github.io/school-works/works/subjects/oriprof/1fx274w1xz4u00/?theme=light', 'https://inovomiast.github.io/school-works/works/subjects/lengua/1fx21q01xz49vk/', 'https://inovomiast.github.io/school-works/works/subjects/oriprof/1fx27il1xz4bpv/', 'https://inovomiast.github.io/school-works/works/subjects/oriprof/1fx2d281xz4g8x/', 'https://inovomiast.github.io/school-works/works/subjects/filosofia/1fx2jwx1xz4r0a/', 'https://inovomiast.000webhostapp.com/user/inovomiast/cdn/school/audio/Audio_Telefono_Orientacion.mp3', 'https://inovomiast.github.io/school-works/works/subjects/lengua/1fx210kj1xz4t6g', 'https://inovomiast.github.io/school-works/works/subjects/lengua/1fx2eo81xz4oq9', 'https://inovomiast.github.io/school-works/works/subjects/tecnologia/1fx2fht1xz4emd', 'https://inovomiast.github.io/school-works/works/subjects/oriprof/1fx2p0y1xz4amt/index.html'];
 
 //URL Parameters
 const queryString = window.location.search;
@@ -210,6 +210,24 @@ body.onload = () => {
             clearInterval(unlockTimer);
             gotobtn.disabled = false;
             gotourl.href = urls[10];
+        }
+    
+    }, 1000);
+}
+}else if(shid === 'VQI0wvP2'){
+    document.title = 'Nido Para Abejas - IShortner';
+    body.onload = () => {
+        gotourl.href = '';
+        gotobtn.disabled = true;
+        var unlockTimer = setInterval(function(){                
+        gotobtn.innerHTML = timeleft + "secs To Unlock the Link!";
+        timeleft -= 1;
+                
+        if(timeleft === 0){
+            gotobtn.innerHTML = 'Access to Link';
+            clearInterval(unlockTimer);
+            gotobtn.disabled = false;
+            gotourl.href = urls[11];
         }
     
     }, 1000);
